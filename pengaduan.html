@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style/pengaduan-style.css">
+    <title>Layanan Pengaduan</title>
+    <link rel="stylesheet" href="style/pelaporan.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -22,9 +22,78 @@
     <!-- Header-->
     <div class="header">
         <img class="background" src="style/img/background.png">
-        <div class="title">
-            <h1>Layanan Pengaduan</h1>
+        <div class="text-header">
+            <p id="title">Layanan Pengaduan</p>
+            <p id="description">Kirim pengaduan Anda melalui formulir berikut</p>
         </div>
+    </div>
+
+    <!-- Background-->
+    <div class="white-background">
+
+    </div>
+
+    <!-- Container-->
+    <div class="white-container">
+        <form class="form" method="POST">
+            <p>Nama Pelapor</p>
+            <input id="nama" type="text" placeholder="Nama"><br>
+            <div class="row">
+                <div class="col-left">
+                    <p>Nomor NIM/NIDN/NIK</p>
+                    <input id="nomor" type="text" placeholder="Nomor">
+                </div>
+                <div class="col-right">
+                    <p>Status</p>
+                    <select id="status" name="status-pengadu">
+                        <option value="" disabled selected hidden>Status</option>
+                        <option value="Mahasiswa">Mahasiswa</option>
+                        <option value="Dosen">Dosen</option>
+                        <option value="Civitas">Civitas</option>
+                        <option value="Publik">Publik</option>
+                    </select><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-left">
+                    <p>E-mail</p>
+                    <input id="email" type="text" placeholder="E-mail">
+                </div>
+                <div class="col-right">
+                    <p>Nomor Telepon</p>
+                    <input id="telp" type="text" placeholder="Nomor Telepon"><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-left">
+                    <p>Rujukan</p>
+                    <select id="rujukan" name="rujukan">
+                        <option value="" disabled selected hidden>Rujukan</option>
+                        <option value="Fakultas">Fakultas</option>
+                    </select>
+                </div>
+                <div class="col-right">
+                    <p>Kategori</p>
+                    <select id="kategori" name="kategori">
+                        <option value="" disabled selected hidden>Kategori</option>
+                        <option value="Fasilitas">Fasilitas</option>
+                    </select>
+                </div>
+            </div>
+            <p>Judul</p>
+            <input id="judul" type="text" placeholder="Judul"><br>
+            <p>Deskripsi</p>
+            <textarea id="deskripsi" name="deskripsi" rows="8" cols="50" placeholder="  Deskripsi"></textarea><br>
+            <div class="row">
+                <div class="col-left">
+                    <p>Tanggal</p>
+                    <input id="tanggal" type="date"><br>
+                </div>
+                <div class="col-right">
+                    <button>Kirim</button>
+                </div>
+            </div>
+        </form>
     </div>
 
     <!-- Footer -->

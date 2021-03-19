@@ -5,7 +5,12 @@ html, body {
     margin: 0;
 }
 
-ul {
+.navbar {
+    position: fixed;
+    width: 100%;
+}
+
+.navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -14,11 +19,11 @@ ul {
     box-shadow: 0 4px 4px -1px rgba(0,0,0,0.25);
 }
 
-li {
+.navbar li {
     float: left;
 }
 
-li img {
+.navbar li img {
     margin-top: 13px;
     margin-left: 20px;
     margin-bottom: 12px;
@@ -26,7 +31,7 @@ li img {
     height: 32px;
 }
 
-li a {
+.navbar li a {
     display: block;
     color: #5157F8;
     text-align: center;
@@ -37,7 +42,7 @@ li a {
     font-weight: 400;
 }
 
-li button {
+.navbar li button {
     width: 100px;
     height: 30px;
     background-color: #5157F8;
@@ -49,4 +54,51 @@ li button {
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     color: white;
+}
+
+.header .background {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    /* bottom: 0; */
+    margin-bottom: 0;
+    width: 100%;
+    height: 130px;
+    background-color: #F5F6FF;
+    text-align: center;
+}
+
+.hyperlink {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.hyperlink li {
+    display: inline;
+}
+
+.hyperlink a {
+    display: inline-block;
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 550;
+    color: black;
+    text-decoration: none;
+}
+
+#copyright {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    font-weight: 300px;
+    color: black;
+
 }

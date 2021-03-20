@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html, body {
+    height: auto;
+    margin: 0;
+}
+
+/* navbar */
+
+.navbar {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    display: block;
+    z-index: 1;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #F5F6FF;
+    box-shadow: 0 4px 4px -1px rgba(0,0,0,0.25);
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li img {
+    margin-top: 13px;
+    margin-left: 20px;
+    margin-bottom: 12px;
+    width: 110px;
+    height: 32px;
+}
+
+.navbar li a {
+    display: block;
+    color: #5157F8;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.navbar li #logout {
+    position: fixed;
+    float: right;
+    right: 20px;
+    color: #5157F8;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* header */
+
+.header {
+    margin-top: 60px;
+    background: black;
+}
+
+.header .background {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+.header .text-header #title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    -webkit-text-stroke: 0.4px black;
+    color: white;
+    position: absolute;
+    top: 85px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* white-background */
+.white-background {
+    width: 100%;
+    height: 600px;
+}
+
+/* Konten */
+
+.container {
+    /* background-color: blue; */
+    width: 900px;
+    height: 1000px;
+    position: absolute;
+    top: 700px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.grid-container > div {
+    text-align: center;
+    padding: 20px 0;
+    /* height: 100px; */
+}
+
+.item1, .item2, .item3  {
+    background-color: #e5e6f7;
+}
+
+.item4, .item5, .item6, .item7 {
+    grid-column: 1 / 4;
+}
+
+.grid-container .title {
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container .number {
+    font-family: 'Lato', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    margin: 5px;
+    padding: 0;
+}
+
+.grid-container .description {
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    margin-top: 5px;
+    padding: 0;
+}
+
+.grid-container .table-title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    float: left;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.grid-container table {
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    border-collapse: collapse;
+}
+
+.item4, .item5, .item6, .item7 {
+    overflow-x: auto;
+}
+
+tr {
+    height: 40px;
+    font-weight: 400;
+}
+
+tr:nth-child(1) {
+    background-color: #5157F8;
+    color: white;
+}
+
+tr:nth-child(n+2) {
+    text-align: left;
+}
+
+td {
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+table #button-col {
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #e5e6f7;
+}
+
+table button {
+    width: 30px;
+    height: 25px;
+    padding: 0;
+    border: none;
+    margin: 2px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+table #check {
+    background-image: url("img/check.svg");
+}
+
+table #expand {
+    background-image: url("img/expand.svg");
+}
+
+table #delete {
+    background-image: url("img/delete.svg");
+}
+
+table button:hover {
+    filter: brightness(80%);
+}
+
+@media (max-width: 1000px) {
+    .container {
+        width: 85%;
+    }
+}
+
+@media (max-width: 650px) {
+    .item1, .item2, .item3 {
+        grid-column: 1 / 4;
+    }
+}

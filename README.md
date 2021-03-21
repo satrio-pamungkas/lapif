@@ -1,5 +1,10 @@
 # LAPIF
 Tugas UTS Purpose
+<br>
+Pemrograman Web (RL210) - Rekayasa Perangkat Lunak UPI
+<br>
+Universitas Pendidikan Indonesia
+<br>
 
 - Fajar Muhammad Al-Hijri (https://github.com/fajarmuhamad616)
 - Faris Huwaidi (https://github.com/farishuwaidi)

@@ -15,15 +15,25 @@
 
 <body>
     <!-- Navbar -->
-    <header class="navbar">
+    <div class="navbar">
+        <div class="logo">
+            <img src="style/img/logo.svg" alt="logo">
+        </div>
+        
         <ul>
-            <li><img src="style/img/lapif.svg" alt="logo"></li>
             <li><a href="pengaduan.html">PENGADUAN</a></li>
             <li><a href="aspirasi.html">ASPIRASI</a></li>
             <li><a href="#">FORUM</a></li>
             <li style="float:right"><button onclick="redirect()">MASUK</button></li>
         </ul>
-    </header>
+
+        <div class="menu-toggle" style="float: right;margin-right: 20px;">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
     <!-- Section Selamat Datang di LAPIF -->
     <section id="banner-1">
         <div class="banner-1-bgshadow">
@@ -208,6 +218,14 @@
             </p>
         </div>
     </footer>
-</body>
 
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle input');
+        const nav = document.querySelector('.navbar ul');
+
+        menuToggle.addEventListener('click', function(){
+        nav.classList.toggle('slide');
+        });
+    </script>
+</body>
 </html>

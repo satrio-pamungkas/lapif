@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background: url(img/background.png) lightblue;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.navbar {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    display: block;
+    z-index: 1;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #F5F6FF;
+    box-shadow: 0 4px 4px -1px rgba(0,0,0,0.25);
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li img {
+    margin-top: 13px;
+    margin-left: 20px;
+    margin-bottom: 12px;
+    width: 110px;
+    height: 32px;
+}
+
+.navbar li a {
+    display: block;
+    color: #5157F8;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.formlog {
+    background-color: #fff;
+    position: relative;
+    top: 375px;
+    left: 50%;
+    width: 450px;
+    height: 450px;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    box-shadow: 0px 0px 6px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 10px ;
+}
+
+.formlog h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #5157F8;
+    text-align: center;
+    font-size: 40px;
+}
+
+.formlog p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #A2A4E2;
+    text-align: center;
+    font-size: 20px;
+}
+.formlog form {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    width: 76%;
+}
+
+.formlog form label {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #A2A4E2;
+}
+
+.formlog form input {
+    width: 100%;
+    height: 43px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 3px solid #5157F8;
+    background-color: #fff;
+    border-radius: 10px;
+    text-indent: 10px;
+}
+
+.formlog form #forgot {
+    font-size: 16px;
+}
+
+::-webkit-input-placeholder {
+    color: #A2A4E2;
+    font-family: 'Lato',sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 5px;
+    transition: opacity .5s ease-in-out;
+}
+
+:focus::-webkit-input-placeholder {
+    opacity: 0.5;
+}
+
+.formlog form a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #A2A4E2;
+    text-decoration: none;
+}
+
+.formlog form button {
+    width: 100%;
+    height: 45px;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: #5157F8;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+    border: 2px solid #5157F8;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 3px rgba(0, 81, 255, 0.25);
+}
+
+.formlog form button:hover {
+    background-color: #3539a0;
+    cursor: pointer;
+}
+
+/* Foooter */
+
+.footer {
+    position: relative;
+    top: 200px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 130px;
+    background-color: #F5F6FF;
+    text-align: center;
+}
+
+.hyperlink {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.hyperlink li {
+    display: inline;
+}
+
+.hyperlink a {
+    display: inline-block;
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 550;
+    color: black;
+    text-decoration: none;
+}
+
+#copyright {
+    text-align: center;
+    font-family: 'Lato',sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    color: black;
+}
+
+@media (max-width: 575px) {
+    .navbar li a, .navbar li button{
+        display: none;
+    }
+
+    .formlog {
+        width: 80%;
+    }
+
+    .formlog form {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+

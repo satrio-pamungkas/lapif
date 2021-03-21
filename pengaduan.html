@@ -7,16 +7,17 @@
     <title>Layanan Pengaduan - LAPIF</title>
     <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="style/pelaporan.css">
+    <script src="script/script-pelaporan.js"></script>
 </head>
 <body>
     <!-- Navbar -->
     <div class="navbar">
         <ul>
             <li><img src="style/img/logo.svg" alt="logo"></li>
-            <li><a href="#">PENGADUAN</a></li>
-            <li><a href="#">ASPIRASI</a></li>
+            <li><a href="pengaduan.html">PENGADUAN</a></li>
+            <li><a href="aspirasi.html">ASPIRASI</a></li>
             <li><a href="#">FORUM</a></li>
-            <li style="float:right"><button>MASUK</button></li>
+            <li style="float:right"><button onclick="redirect()">MASUK</button></li>
         </ul>
     </div>
 
@@ -91,7 +92,7 @@
                     <input id="tanggal" type="date"><br>
                 </div>
                 <div class="item11">
-                    <button>Kirim</button>
+                    <button onclick="validateForm()">Kirim</button>
                 </div>
             </div>
         </form>
@@ -102,10 +103,10 @@
         <div class="hyperlink">
             <ul>
                 <li><a href="#">BERANDA</a></li>
-                <li><a href="#">PENGADUAN</a></li>
-                <li><a href="#">ASPIRASI</a></li>
+                <li><a href="pengaduan.html">PENGADUAN</a></li>
+                <li><a href="aspirasi.html">ASPIRASI</a></li>
                 <li><a href="#">FORUM</a></li>
-                <li><a href="#">MASUK</a></li>
+                <li><a href="login.html">MASUK</a></li>
                 <li><a href="#">HUBUNGI KAMI</a></li>
             </ul>
         </div>

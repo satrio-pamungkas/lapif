@@ -191,6 +191,11 @@ html, body {
     color: white;
 }
 
+.white-container form button:hover {
+    background-color: #363abe;
+    cursor: pointer;
+}
+
 #nomor, #email {
     width: 92%;
 }
@@ -215,7 +220,6 @@ html, body {
 .footer {
     position: absolute;
     left: 0;
-    /* bottom: 0; */
     margin-bottom: 0;
     width: 100%;
     height: 130px;

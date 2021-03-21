@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masuk Admin - LAPIF</title>
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style/login.css">
+    <script src="script/script-login.js"></script>
+</head>
+<body style="background: url(style/img/background.png);">
+    <!-- Navbar -->
+    <div class="navbar">
+        <ul>
+            <li><img src="style/img/logo.svg" alt="logo"></li>
+            <li><a href="pengaduan.html">PENGADUAN</a></li>
+            <li><a href="aspirasi.html">ASPIRASI</a></li>
+            <li><a href="#">FORUM</a></li>
+        </ul>
+    </div>
+
+    <!-- FORM LOGIN -->
+    <div class="formlog">
+        <h3>Masuk</h3>
+        <p>Khusus untuk Admin</p>
+        <form action="dashboard.html" method="POST" onsubmit="return validateForm()">
+            <label for="username">Username</label><br>
+            <input type="text" placeholder="Username" name="username" id="username"><br>
+            <label for="password">Password</label><br>
+            <input type="password" placeholder="Password" name="password" id="password"><br>
+            <a id="forgot" href="forgot-password.html"><u>Lupa Password</u></a><br>
+            <button>Masuk</button>
+        </form>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="hyperlink">
+            <ul>
+                <li><a href="#">BERANDA</a></li>
+                <li><a href="pengaduan.html">PENGADUAN</a></li>
+                <li><a href="aspirasi.html">ASPIRASI</a></li>
+                <li><a href="#">FORUM</a></li>
+                <li><a href="login.html">MASUK</a></li>
+                <li><a href="#">HUBUNGI KAMI</a></li>
+            </ul>
+        </div>
+        <p id="copyright">
+            Copyright 2021. Kelompok 7 Pemrograman Web
+        </p>
+    </div>
+</body>
+</html>

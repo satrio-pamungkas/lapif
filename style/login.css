@@ -170,6 +170,10 @@ body {
     text-align: center;
 }
 
+.hyperlink ul {
+    padding: 0;
+}
+
 .hyperlink li {
     display: inline;
 }

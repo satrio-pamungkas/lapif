@@ -6,3 +6,6 @@ Pemrograman Web (RL210) <br>
 - Fajar Muhammad Al-Hijri (1909473)
 - Faris Huwaidi (1904464)
 - Muhammad Raihan Satrio P. P. (1902897)
+<br>
+
+Demo : https://lapif.netlify.app/

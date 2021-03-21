@@ -37,14 +37,16 @@
     <!-- Container-->
     <div class="white-container">
         <form class="form" method="POST">
-            <p>Nama Pelapor</p>
-            <input id="nama" type="text" placeholder="Nama"><br>
-            <div class="row">
-                <div class="col-left">
+            <div class="grid-container">
+                <div class="item1">
+                    <p>Nama Pelapor</p>
+                    <input id="nama" type="text" placeholder="Nama"><br>
+                </div>
+                <div class="item2">
                     <p>Nomor NIM/NIDN/NIK</p>
                     <input id="nomor" type="text" placeholder="Nomor">
                 </div>
-                <div class="col-right">
+                <div class="item3">
                     <p>Status</p>
                     <select id="status" name="status-pengadu">
                         <option value="" disabled selected hidden>Status</option>
@@ -54,43 +56,41 @@
                         <option value="Publik">Publik</option>
                     </select><br>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-left">
+                <div class="item4">
                     <p>E-mail</p>
                     <input id="email" type="text" placeholder="E-mail">
                 </div>
-                <div class="col-right">
+                <div class="item5">
                     <p>Nomor Telepon</p>
                     <input id="telp" type="text" placeholder="Nomor Telepon"><br>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-left">
+                <div class="item6">
                     <p>Rujukan</p>
                     <select id="rujukan" name="rujukan">
                         <option value="" disabled selected hidden>Rujukan</option>
                         <option value="Fakultas">Fakultas</option>
                     </select>
                 </div>
-                <div class="col-right">
+                <div class="item7">
                     <p>Kategori</p>
                     <select id="kategori" name="kategori">
                         <option value="" disabled selected hidden>Kategori</option>
                         <option value="Fasilitas">Fasilitas</option>
                     </select>
                 </div>
-            </div>
-            <p>Judul</p>
-            <input id="judul" type="text" placeholder="Judul"><br>
-            <p>Deskripsi</p>
-            <textarea id="deskripsi" name="deskripsi" rows="8" cols="50" placeholder="  Deskripsi"></textarea><br>
-            <div class="row">
-                <div class="col-left">
+                <div class="item8">
+                    <p>Judul</p>
+                    <input id="judul" type="text" placeholder="Judul"><br>
+                </div>
+                <div class="item9">
+                    <p>Deskripsi</p>
+                    <textarea id="deskripsi" name="deskripsi" rows="8" cols="50" placeholder="  Deskripsi"></textarea><br>
+                </div>
+                <div class="item10">
                     <p>Tanggal</p>
                     <input id="tanggal" type="date"><br>
                 </div>
-                <div class="col-right">
+                <div class="item11">
                     <button>Kirim</button>
                 </div>
             </div>

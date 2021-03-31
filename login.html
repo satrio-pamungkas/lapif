@@ -12,12 +12,23 @@
 <body style="background: url(style/img/background.png);">
     <!-- Navbar -->
     <div class="navbar">
+        <div class="logo">
+            <img src="style/img/logo.svg" alt="logo">
+        </div>
+        
         <ul>
-            <li><img src="style/img/logo.svg" alt="logo"></li>
             <li><a href="pengaduan.html">PENGADUAN</a></li>
             <li><a href="aspirasi.html">ASPIRASI</a></li>
             <li><a href="#">FORUM</a></li>
+            <li style="float: right;"><button>MASUK</button></li>
         </ul>
+
+        <div class="menu-toggle" style="float: right;margin-right: 20px;">
+            <input type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
 
     <!-- FORM LOGIN -->
@@ -50,5 +61,14 @@
             Copyright 2021. Kelompok 7 Pemrograman Web
         </p>
     </div>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle input');
+        const nav = document.querySelector('.navbar ul');
+
+        menuToggle.addEventListener('click', function(){
+        nav.classList.toggle('slide');
+        });
+    </script>
 </body>
 </html>

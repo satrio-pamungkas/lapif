@@ -17,6 +17,8 @@ body {
     position: fixed;
     width: 100%;
     display: block;
+    background-color: #F5F6FF;
+    box-shadow: 0 4px 4px -1px rgba(0,0,0,0.25);
     z-index: 1;
 }
 
@@ -25,15 +27,17 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #F5F6FF;
-    box-shadow: 0 4px 4px -1px rgba(0,0,0,0.25);
 }
 
 .navbar li {
     float: left;
 }
 
-.navbar li img {
+.logo {
+    float: left;
+}
+
+.logo img {
     margin-top: 13px;
     margin-left: 20px;
     margin-bottom: 12px;
@@ -50,6 +54,81 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     font-weight: 400;
+}
+
+.navbar li button {
+    display: none;
+    /* width: 100px;
+    height: 30px;
+    background-color: #5157F8;
+    border-radius: 4px;
+    border: none;
+    margin-top: 16px;
+    margin-right: 20px;
+    margin-bottom: 12px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: white; */
+}
+
+.navbar li button:hover {
+    background-color: #3539b8;
+    cursor: pointer;
+}
+
+/* humberger menu */
+
+.menu-toggle {
+    margin-top: 20px;
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input{
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #5157F8;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+/* humberger animation */
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+
+}
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+/* cheked */
+.menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px , -1px);
+    background-color: #5157F8;
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-45deg) translate(-1px, 0);
+    background-color: #5157F8;
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+    transform: scale(0);
 }
 
 .formlog {
@@ -197,8 +276,35 @@ body {
 }
 
 @media (max-width: 575px) {
-    .navbar li a, .navbar li button{
+    .menu-toggle {
+        display: flex;
+    }
+    
+    .navbar ul {
+        background-color: #f5f6ffb6;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        height: 90vh;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    .navbar ul li {
+        height: 40px;   
+    }
+    .navbar li button {
         display: none;
+        margin-left: 20px;
+    }
+    .navbar ul.slide {
+        opacity: 1;
+        transform: translate(0);
     }
 
     .formlog {

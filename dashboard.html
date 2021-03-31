@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,18 +9,20 @@
     <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="style/dashboard.css">
 </head>
+
 <body>
     <!-- Navbar -->
     <div class="navbar">
         <div class="logo">
             <img src="style/img/logo.svg" alt="logo">
         </div>
-        
+
         <ul>
             <li><a href="pengaduan.html">PENGADUAN</a></li>
             <li><a href="aspirasi.html">ASPIRASI</a></li>
             <li><a href="#">FORUM</a></li>
-            <li style="float:right"><li><a id="logout" href="login.html">KELUAR</a></li>
+            <li style="float:right">
+            <li><a id="logout" href="login.html">KELUAR</a></li>
         </ul>
 
         <div class="menu-toggle" style="float: right;margin-right: 20px;">
@@ -79,9 +82,9 @@
                         <td>KAMPUS SERANG</td>
                         <td>PERBANYAK FASILITAS LAYAK</td>
                         <td id="button-col">
-                            <button id="check"></button>
-                            <button id="expand"></button>
-                            <button id="delete"></button>
+                            <button class="check"></button>
+                            <button class="expand" id="la-expand-1" onclick="getId(this)"></button>
+                            <button class="delete"></button>
                         </td>
                     </tr>
                     <tr>
@@ -89,9 +92,9 @@
                         <td>KAMPUS PUSAT</td>
                         <td>PERBANYAK TEMPAT DUDUK</td>
                         <td id="button-col">
-                            <button id="check"></button>
-                            <button id="expand"></button>
-                            <button id="delete"></button>
+                            <button class="check"></button>
+                            <button class="expand" id="la-expand-2" onclick="getId(this)"></button>
+                            <button class="delete"></button>
                         </td>
                     </tr>
                     <tr>
@@ -99,12 +102,23 @@
                         <td>KAMPUS CIBIRU</td>
                         <td>PERBANYAK SPOT WIFI</td>
                         <td id="button-col">
-                            <button id="check"></button>
-                            <button id="expand"></button>
-                            <button id="delete"></button>
+                            <button class="check"></button>
+                            <button class="expand" id="la-expand-3" onclick="getId(this)"></button>
+                            <button class="delete"></button>
                         </td>
-                    </tr>      
+                    </tr>
                 </table>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a class="active" href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">&raquo;</a>
+                </div>
             </div>
             <div class="item5">
                 <p class="table-title">DATA LAPORAN PENGADUAN</p>
@@ -124,9 +138,9 @@
                         <td>KAMPUS SERANG</td>
                         <td>LANTAI DEKAT TANGGA LICIN</td>
                         <td id="button-col">
-                            <button id="check"></button>
-                            <button id="expand"></button>
-                            <button id="delete"></button>
+                            <button class="check"></button>
+                            <button class="expand" id="lp-expand-1" onclick="getId(this)"></button>
+                            <button class="delete"></button>
                         </td>
                     </tr>
                     <tr>
@@ -134,9 +148,9 @@
                         <td>KAMPUS PUSAT</td>
                         <td>RUANGAN 2 LISTRIK MATI</td>
                         <td id="button-col">
-                            <button id="check"></button>
-                            <button id="expand"></button>
-                            <button id="delete"></button>
+                            <button class="check"></button>
+                            <button class="expand" id="lp-expand-2" onclick="getId(this)"></button>
+                            <button class="delete"></button>
                         </td>
                     </tr>
                     <tr>
@@ -144,12 +158,23 @@
                         <td>KAMPUS CIBIRU</td>
                         <td>TOILET TIDAK BERFUNGSI</td>
                         <td id="button-col">
-                            <button id="check"></button>
-                            <button id="expand"></button>
-                            <button id="delete"></button>
+                            <button class="check"></button>
+                            <button class="expand" id="lp-expand-3" onclick="getId(this)"></button>
+                            <button class="delete"></button>
                         </td>
-                    </tr>      
+                    </tr>
                 </table>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a class="active" href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">&raquo;</a>
+                </div>
             </div>
             <div class="item6">
                 <p class="table-title">DATA FORUM DISKUSI</p>
@@ -166,30 +191,41 @@
                         <td>FAJAR MUHAMMAD</td>
                         <td>CARA MENGISI KRS ?</td>
                         <td id="button-col">
-                            <button id="check"></button>
-                            <button id="expand"></button>
-                            <button id="delete"></button>
+                            <button class="check"></button>
+                            <button class="expand" id="fd-expand-1" onclick="getId(this)"></button>
+                            <button class="delete"></button>
                         </td>
                     </tr>
                     <tr>
                         <td>FARIS HUWAIDI</td>
                         <td>CARA BUAT KTM ?</td>
                         <td id="button-col">
-                            <button id="check"></button>
-                            <button id="expand"></button>
-                            <button id="delete"></button>
+                            <button class="check"></button>
+                            <button class="expand" id="fd-expand-2" onclick="getId(this)"></button>
+                            <button class="delete"></button>
                         </td>
                     </tr>
                     <tr>
                         <td>MUHAMMAD RAIHAN SATRIO</td>
                         <td>CARA MENGETAHUI PASSWORD SIAK ?</td>
                         <td id="button-col">
-                            <button id="check"></button>
-                            <button id="expand"></button>
-                            <button id="delete"></button>
+                            <button class="check"></button>
+                            <button class="expand" id="fd-expand-3" onclick="getId(this)"></button>
+                            <button class="delete"></button>
                         </td>
-                    </tr>      
+                    </tr>
                 </table>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a class="active" href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">&raquo;</a>
+                </div>
             </div>
             <div class="item7">
                 <p class="table-title">DATA LAPORAN SELESAI</p>
@@ -221,19 +257,82 @@
                         <td>KAMPUS CIBIRU</td>
                         <td>PERBANYAK SPOT WIFI</td>
                         <td>ASPIRASI</td>
-                    </tr>      
+                    </tr>
                 </table>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a class="active" href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">&raquo;</a>
+                </div>
             </div>
         </div>
     </div>
 
-    <script>
-        const menuToggle = document.querySelector('.menu-toggle input');
-        const nav = document.querySelector('.navbar ul');
+    <!-- Modal-->
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-title">
+                <h2>Detail Data</h2>
+                <span class="close-button">&times;</span>
+            </div>
+            <hr class="modal-title-divider">
+            <div class="grid-container-modal">
 
-        menuToggle.addEventListener('click', function(){
-        nav.classList.toggle('slide');
-        });
-    </script>
+                <div id="pelapor-nama">
+                    <h3>Nama Pelapor:</h3>
+                    <span>Fajar Muhammad</span>
+                </div>
+                <div id="pelapor-nomor">
+                    <h3>Nomor Pelapor: </h3>
+                    <span>08888888888</span>
+                </div>
+                <div id="pelapor-status">
+                    <h3>Status: </h3>
+                    <span>Mahasiswa</span>
+                </div>
+                <div id="pelapor-email">
+                    <h3>Email: </h3>
+                    <span>fajar@mail.com</span>
+                </div>
+                <div id="pelapor-notlp">
+                    <h3>No Telepon: </h3>
+                    <span>8888888888</span>
+                </div>
+                <div id="pelapor-rujukan">
+                    <h3>Rujukan: </h3>
+                    <span>Kampus Serang</span>
+                </div>
+                <div id="pelapor-kategori">
+                    <h3>Kategori: </h3>
+                    <span>Aspirasi</span>
+                </div>
+                <div id="pelapor-judul">
+                    <h3>Judul: </h3>
+                    <span>Perbanyak Fasilitas Kampus</span>
+                </div>
+                <div id="pelapor-tanggal">
+                    <h3>Tanggal: </h3>
+                    <span>Jum'at, 02 April 2021</span>
+                </div>
+                <div id="pelapor-deskripsi">
+                    <h3>Deskripsi: </h3>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus at, vitae dolorum rem rerum
+                        quis
+                        quasi explicabo quas ipsa porro eos similique ducimus suscipit vel voluptates perspiciatis
+                        tempore
+                        magni ad?</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script/script-dashboard.js"></script>
 </body>
+
 </html>

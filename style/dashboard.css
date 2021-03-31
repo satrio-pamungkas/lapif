@@ -306,88 +306,6 @@ table button:hover {
     filter: brightness(80%);
 }
 
-/* pagination */
-.pagination {
-    display: flex;
-    padding: 20px 0px;
-    margin: 0px 0px;
-}
-
-.pagination a {
-    color: black;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-
-.pagination a.active {
-    background-color: #5157F8;
-    color: white;
-    padding: 8px 16px;
-}
-
-.pagination a:hover:not(.active) {
-    background-color: #ddd;
-}
-
-@media (max-width: 1000px) {
-    .container {
-        width: 85%;
-    }
-}
-
-@media (max-width: 650px) {
-
-    .item1,
-    .item2,
-    .item3 {
-        grid-column: 1 / 4;
-    }
-
-    .header .text-header #title {
-        font-size: 22px;
-    }
-}
-
-@media (max-width: 575px) {
-    .menu-toggle {
-        display: flex;
-    }
-
-    .navbar ul {
-        background-color: #f5f6ffb6;
-        position: absolute;
-        right: 0;
-        top: 60px;
-        height: 90vh;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        z-index: 1;
-        transform: translateX(100%);
-        transition: all 1s;
-        opacity: 0;
-    }
-
-    .navbar ul li {
-        height: 40px;
-    }
-
-    .navbar li button {
-        display: none;
-        margin-left: 20px;
-    }
-
-    .navbar ul.slide {
-        opacity: 1;
-        transform: translate(0);
-    }
-
-    .header .text-header #title {
-        font-size: 22px;
-        width: 250px;
-    }
-}
-
 .grid-container-modal {
     display: grid;
     grid-template-columns: auto auto;
@@ -508,6 +426,223 @@ hr.modal-title-divider {
     font-family: Lato, sans-serif;
 }
 
+/* PAGINATION */
+/* Aspirasi */
+
+#pagination-aspirasi {
+    display: flex;
+    padding: 20px 0px;
+    margin: 0px 0px;
+}
+
+#pagination-aspirasi .disable-aspirasi {
+    background-color: white;
+}
+
+#pagination-aspirasi .aspirasi {
+    background-color: white;
+}
+
+#pagination-aspirasi a, #pagination-aspirasi span {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+#pagination-aspirasi a:hover {
+    cursor: pointer;
+    background-color: #ddd;
+}
+
+#pagination-aspirasi a.active {
+    background-color: #5157F8;
+    color: white;
+    padding: 8px 16px;
+}
+
+#pagination-aspirasi span {
+    background-color: #5157F8;
+    color: white;
+    padding: 8px 16px;
+}
+
+/* Diskusi */
+
+#pagination-diskusi {
+    display: flex;
+    padding: 20px 0px;
+    margin: 0px 0px;
+}
+
+#pagination-diskusi .disable-diskusi {
+    background-color: white;
+}
+
+#pagination-diskusi .diskusi {
+    background-color: white;
+}
+
+#pagination-diskusi a, #pagination-diskusi span {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+#pagination-diskusi a:hover {
+    cursor: pointer;
+    background-color: #ddd;
+}
+
+#pagination-diskusi a.active {
+    background-color: #5157F8;
+    color: white;
+    padding: 8px 16px;
+}
+
+#pagination-diskusi span {
+    background-color: #5157F8;
+    color: white;
+    padding: 8px 16px;
+}
+
+/* Laporan */
+
+#pagination-laporan {
+    display: flex;
+    padding: 20px 0px;
+    margin: 0px 0px;
+}
+
+#pagination-laporan .disable-laporan {
+    background-color: white;
+}
+
+#pagination-laporan .laporan {
+    background-color: white;
+}
+
+#pagination-laporan a, #pagination-laporan span {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+#pagination-laporan a:hover {
+    cursor: pointer;
+    background-color: #ddd;
+}
+
+#pagination-laporan a.active {
+    background-color: #5157F8;
+    color: white;
+    padding: 8px 16px;
+}
+
+#pagination-laporan span {
+    background-color: #5157F8;
+    color: white;
+    padding: 8px 16px;
+}
+
+/* Pengaduan */
+
+#pagination-pengaduan {
+    display: flex;
+    padding: 20px 0px;
+    margin: 0px 0px;
+}
+
+#pagination-pengaduan .disable-pengaduan {
+    background-color: white;
+}
+
+#pagination-pengaduan .pengaduan {
+    background-color: white;
+}
+
+#pagination-pengaduan a, #pagination-pengaduan span {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+#pagination-pengaduan a:hover {
+    cursor: pointer;
+    background-color: #ddd;
+}
+
+#pagination-pengaduan a.active {
+    background-color: #5157F8;
+    color: white;
+    padding: 8px 16px;
+}
+
+#pagination-pengaduan span {
+    background-color: #5157F8;
+    color: white;
+    padding: 8px 16px;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        width: 85%;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .item1,
+    .item2,
+    .item3 {
+        grid-column: 1 / 4;
+    }
+
+    .header .text-header #title {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 575px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .navbar ul {
+        background-color: #f5f6ffb6;
+        position: absolute;
+        right: 0;
+        top: 60px;
+        height: 90vh;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        transform: translateX(100%);
+        transition: all 1s;
+        opacity: 0;
+    }
+
+    .navbar ul li {
+        height: 40px;
+    }
+
+    .navbar li button {
+        display: none;
+        margin-left: 20px;
+    }
+
+    .navbar ul.slide {
+        opacity: 1;
+        transform: translate(0);
+    }
+
+    .header .text-header #title {
+        font-size: 22px;
+        width: 250px;
+    }
+}
+
+
 @media (min-width: 992px) and (max-width: 1200px) {
     .modal-content {
         width: 80vw;
@@ -593,3 +728,4 @@ hr.modal-title-divider {
     }
 
 }
+

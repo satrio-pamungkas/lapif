@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
 * {
     padding: 0;
     margin: 0;
@@ -59,7 +57,8 @@ body {
 }
 
 .navbar li button {
-    width: 100px;
+    display: none;
+    /* width: 100px;
     height: 30px;
     background-color: #5157F8;
     border-radius: 4px;
@@ -69,7 +68,7 @@ body {
     margin-bottom: 12px;
     font-family: 'Lato', sans-serif;
     font-size: 14px;
-    color: white;
+    color: white; */
 }
 
 .navbar li button:hover {
@@ -317,3 +316,4 @@ body {
         width: 100%;
     }
 }
+
